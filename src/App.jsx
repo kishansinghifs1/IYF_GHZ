@@ -5,6 +5,8 @@ import Bace from "./Components/Mottos/Bace";
 import Title from "./Components/Title/Title";
 import AboutBace from './Components/AboutBace/AboutBace';
 import Founder from "./Components/Founder/Founder";
+import Carousel from "./Components/Carousel/Carousel.jsx";
+import IskconMissions from "./Components/IskconMission/IskconMission.jsx";
 
 const App = () => {
   return (
@@ -20,8 +22,12 @@ const App = () => {
         <AboutBace />
       </div>
       <div className="container">
+        <Carousel/>
+      </div>
+      <div className="container">
         <Title subtitle='THE SWAMI WHO STARTED IT ALL'/>
-        <Founder />
+        <Founder /> 
+        <IskconMissions/>
       </div>
     </div>
   );
