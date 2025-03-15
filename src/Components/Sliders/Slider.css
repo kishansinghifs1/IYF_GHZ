@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.slider-container {
+  margin-top: 20px;
+  padding: 10;
+  min-height: 100vh;
+  background-color: #f8f3ee;
+}
+
+.hd {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.sub {
+  font-size: 2rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.tit {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #444;
+  stroke-width: 2;
+}
+.dots-container {
+  padding-top: 20px;
+  display: flex;
+  gap: 8px;
+  margin: 0 16px;
+  padding-left: 550px;
+}
+
+.dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dot.active {
+  background-color: #333;
+  transform: scale(1.2);
+}
+
+.slider{
+    margin-top: 30px;
+    padding-left: 450px;
+}
+.cd{
+    height: 80%;
+}

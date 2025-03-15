@@ -5,12 +5,11 @@ import Bace from "./Components/Mottos/Bace";
 import Title from "./Components/Title/Title";
 import AboutBace from './Components/AboutBace/AboutBace';
 import Founder from "./Components/Founder/Founder";
-import Carousel from "./Components/Carousel/Carousel.jsx";
 import IskconMissions from "./Components/IskconMission/IskconMission.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import ContactUs from "./Components/ContactUs/ContactUs.jsx";
 import SaturdayEvent from './Components/SaturdayEventsNdDYS/SaturdayEvent';
-
+import NewSlide from "./Components/NewSlide/NewSlide.jsx";
 const App = () => {
   return (
     <div>
@@ -23,7 +22,7 @@ const App = () => {
       <AboutBace />
       </div>
       <div className="container">
-        <Carousel/>
+      <NewSlide />
       </div>
       <div className="container">
         <Title subtitle='Life Changing Courses'/>
