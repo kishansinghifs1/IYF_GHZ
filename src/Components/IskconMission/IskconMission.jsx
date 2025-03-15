@@ -42,7 +42,8 @@ const IskconMissions = () => {
       alignItems: "center",
       padding: "3rem 1rem",
       fontFamily: "'Inter', sans-serif",
-      color: "#333333"
+      color: "#333333",
+      margin: "10px",
     }}>
       <div style={{ 
         maxWidth: "900px",

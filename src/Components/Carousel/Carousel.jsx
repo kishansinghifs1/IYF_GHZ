@@ -1,11 +1,11 @@
-"use client"
-
 import { useState } from "react"
 import "./Carousel.css"
 import Workshop from "../../BACE/Youth Program.jpg"
 import Drama from "../../BACE/Drama.jpg"
 import lectures from "../../BACE/Lectures.jpg"
 import Prasadam from "../../BACE/Prasadam.jpg"
+import spritualstudy from "../../BACE/abc.jpg"
+import Cultural from "../../BACE/Cultural.jpg"
 
 function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -14,7 +14,7 @@ function Carousel() {
       id: 1,
       title: "Cultural Preservation",
       description: "Preserving ancient Vedic traditions and cultural heritage",
-      image:Workshop,
+      image:Prasadam,
     },
     {
       id: 2,
@@ -32,7 +32,17 @@ function Carousel() {
       id: 4,
       title: "Youth Empowerment",
       description: "Programs designed to inspire and guide the next generation",
-      image: Prasadam,
+      image: Workshop,
+    },{
+      id: 5,
+      title: "Scriptual Studies",
+      description: "Deep understanding of the Vedic texts for spiritual development",
+      image:spritualstudy,
+    },{
+      id: 6,
+      title: "Spiritual Leadership",
+      description: "Developing future leaders with strong moral and spiritual values",
+      image:Cultural,
     },
   ]
 
@@ -49,11 +59,11 @@ function Carousel() {
   }
 
   return (
-    <div className="app">
+    <div className="ap">
       <main className="main-container">
-        <div className="container">
+        <div className="ctn">
           {/* Header */}
-          <header className="header">
+          <header className="hd">
             <h3 className="sub">Bhaktivedanta Academy for</h3>
             <h1 className="tit">Culture & Education</h1>
             <p className="description">
@@ -75,7 +85,7 @@ function Carousel() {
           </div>
 
           <div className="carousel-nav">
-            <button className="nav-button" onClick={prevSlide}>
+            <button className="nav-btn" onClick={prevSlide}>
               <svg className="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <polyline points="15 18 9 12 15 6" />
               </svg>
@@ -90,7 +100,7 @@ function Carousel() {
                 />
               ))}
             </div>
-            <button className="nav-button" onClick={nextSlide}>
+            <button className="nav-btn" onClick={nextSlide}>
               <svg className="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <polyline points="9 18 15 12 9 6" />
               </svg>
