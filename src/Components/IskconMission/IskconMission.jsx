@@ -44,7 +44,7 @@ const IskconMissions = () => {
       fontFamily: "'Inter', sans-serif",
       color: "#333333",
       margin: "10px",
-    }}>
+    }} className="ISKM">
       <div style={{ 
         maxWidth: "900px",
         width: "100%",

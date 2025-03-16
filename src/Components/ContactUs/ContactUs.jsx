@@ -10,7 +10,7 @@ function ContactUs() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "96b13c8d-393b-4298-b30c-6237cc21f1bb");
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -66,7 +66,7 @@ function ContactUs() {
               <input
                 type="phone number"
                 name="phone number"
-                value={formData.email}
+                value={formData.phoneNumber}
                 onChange={handleChange}
                 placeholder="Enter your phone number"
               />
